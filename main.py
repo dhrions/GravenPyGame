@@ -1,16 +1,13 @@
-# This is a sample Python script.
+# Ce code provient est tiré de cette vidéo YT : https://www.youtube.com/watch?v=ooITOxbYVTo&t=304s
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Import des modules
+import pygame
+import pytmx
+import pyscroll
 
+from game import Game
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    pygame.init()
+    game = Game()
+    game.run()
